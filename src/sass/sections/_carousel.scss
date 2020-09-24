@@ -1,0 +1,112 @@
+.carousel-feedback {
+    max-width: 90%;
+    margin: 70px auto 30px;
+    position: relative;
+    .item {
+        min-height: 270px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        margin: 50px 10px 10px;
+        padding: 90px 50px 40px;
+        text-align: center;
+        position: relative;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.45);
+        }
+        &__photo {
+            position: absolute;
+            max-width: 100px;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        &__descr {
+            color: rgba(0, 0, 0, .7);
+            font-size: 17px;
+            line-height: 24px;
+            font-style: italic;
+        }
+        &__score {
+            color: rgb(255, 239, 59);
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        &__author {
+            margin-top: 20px;
+            font-weight: 600;
+            span {
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 0 15px rgba(20, 20, 21, 0.1);
+    background: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, .9);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 38%;
+    z-index: 1;
+    transition: all .25s ease-in-out;
+    &_right {
+        right: -25px;
+    }
+    &_left {
+        left: -25px;
+    }
+    &:hover {
+        background: var(--main-color);
+        color: rgba(255, 255, 255, .94);
+        box-shadow: 0 0 15px 5px rgba(20, 20, 21, 0.2);
+    }
+    &:active {
+        background: rgba(255, 255, 255, .94);
+        color: var(--main-color);
+        box-shadow: 0 0 15px 2px rgba(20, 20, 21, 0.3);
+    }
+}
+
+.carousel-nav {
+    width: 0;
+    margin: 0 auto 100px;
+    .dot {
+        display: flex;
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+        list-style-type: none;
+        li {
+            display: block;
+            button {
+                display: block;
+                width: 22px;
+                height: 6px;
+                border: none;
+                border-radius: 3px;
+                background: rgb(224, 224, 224);
+                margin: 0 8px;
+                cursor: pointer;
+                font-size: 0;
+            }
+        }
+        .slick-active {
+            button {
+                background: var(--main-color);
+            }
+        }
+    }
+}
