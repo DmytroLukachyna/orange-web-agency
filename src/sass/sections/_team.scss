@@ -1,0 +1,185 @@
+.team {
+    background: rgb(251, 251, 251);
+    min-height: 856px;
+    &-card {
+        position: relative;
+        width: 360px;
+        height: 540px;
+        margin: 10px;
+        box-shadow: 0 0 2px rgba(20, 20, 21, 0.6);
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            box-shadow: none;
+            .team-card__overlay {
+                opacity: 1;
+            }
+            .experience {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+            .team-card__name {
+                border-radius: 0;
+                box-shadow: none;
+                background: rgba(0, 0, 0, 0);
+                height: 154px;
+                .job {
+                    color: var(--main-color);
+                }
+                .contacts {
+                    display: flex;
+                    justify-content: center;
+                    padding: 11px;
+                    a {
+                        color: rgba(0, 0, 0, .6);
+                        margin: 0 5px;
+                        &:hover {
+                            color: var(--main-color);
+                        }
+                    }
+                }
+            }
+        }
+        &__overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background: linear-gradient(to top, rgba(255, 243, 240, 1), rgba(255, 243, 240, 0));
+            transition: all 0.5s ease-in-out;
+        }
+        &__name {
+            position: absolute;
+            bottom: -24px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 260px;
+            height: 100px;
+            box-shadow: 1px 6px 16px rgba(20, 20, 21, 0.08);
+            border-radius: 5px;
+            background: rgb(255, 255, 255);
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+            .member {
+                color: rgba(0, 0, 0, .7);
+                font-size: 30px;
+                font-weight: 600;
+                padding-top: 16px;
+            }
+            .job {
+                transition: all 0.5s ease-in-out;
+                color: rgba(0, 0, 0, .6);
+                font-size: 16px;
+                padding-top: 11px;
+            }
+            .contacts {
+                transition: all 0.5s ease-in-out;
+                display: none;
+            }
+        }
+        .experience {
+            position: absolute;
+            width: 50%;
+            min-height: 200px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 300px;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+            p {
+                color: rgb(0, 0, 0);
+                font-size: 14px;
+            }
+            .skill {
+                width: 180px;
+                height: 4px;
+                border-radius: 2px;
+                margin: 3px 0 7px;
+                .development {
+                    height: 100%;
+                    border-radius: 2px;
+                    background: rgb(112, 112, 112);
+                    .member_1 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 100%;
+                    }
+                    .member_2 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 90%;
+                    }
+                    .member_3 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 80%;
+                    }
+                }
+                .english {
+                    height: 100%;
+                    border-radius: 2px;
+                    background: rgb(112, 112, 112);
+                    .member_1 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 90%;
+                    }
+                    .member_2 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 100%;
+                    }
+                    .member_3 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 100%;
+                    }
+                }
+                .deadlines {
+                    height: 100%;
+                    border-radius: 2px;
+                    background: rgb(112, 112, 112);
+                    .member_1 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 95%;
+                    }
+                    .member_2 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 90%;
+                    }
+                    .member_3 {
+                        height: 100%;
+                        border-radius: 2px;
+                        background: var(--main-color);
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.member-1 {
+    background: url('../img/team/doron.jpg') no-repeat 50%/cover;
+}
+
+.member-2 {
+    background: url('../img/team/amelia.jpg') no-repeat 50%/cover;
+}
+
+.member-3 {
+    background: url('../img/team/paul.jpg') no-repeat 50%/cover;
+}

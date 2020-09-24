@@ -1,0 +1,27 @@
+.companies {
+    background: rgb(251, 251, 251);
+    &__brands {
+        width: 90%;
+        margin: 70px auto 0;
+        padding-bottom: 70px;
+    }
+    &__item {
+        opacity: 0.4;
+        filter: grayscale(100%);
+        transition: all 0.25s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            display: flex;
+            width: 135px;
+            height: 34px;
+            margin: auto 0;
+        }
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+            filter: none;
+        }
+    }
+}
