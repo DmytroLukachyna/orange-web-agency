@@ -86,8 +86,6 @@
     .dot {
         display: flex;
         justify-content: center;
-        width: 10px;
-        height: 10px;
         list-style-type: none;
         li {
             display: block;
@@ -101,6 +99,7 @@
                 margin: 0 8px;
                 cursor: pointer;
                 font-size: 0;
+				outline: none;
             }
         }
         .slick-active {

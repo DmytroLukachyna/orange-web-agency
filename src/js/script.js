@@ -6,13 +6,11 @@ $(document).ready(function() {
             $('.pageup').fadeOut();
         }
     });
-
     $("a[href=#top]").click(function() {
         const _href = $(this).attr("href");
         $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
         return false;
     });
-
     $('.carousel-feedback').slick({
         infinite: true,
         slidesToShow: 2,
@@ -33,7 +31,6 @@ $(document).ready(function() {
             }
         }]
     });
-
     $('.companies__brands').slick({
         infinite: true,
         slidesToShow: 6,
@@ -70,29 +67,24 @@ $(document).ready(function() {
             }
         ]
     });
-
-
     $(".hamburger").click(function() {
         $(".hamburger").toggleClass("hamburger_active");
         $(".menu").toggleClass("menu_active");
         $(".menu__logo").toggleClass("menu__logo_active");
         $("body").toggleClass("lock-scroll");
     });
-
     $(".menu__item").click(function() {
         $(".hamburger").toggleClass("hamburger_active");
         $(".menu").toggleClass("menu_active");
         $(".menu__logo").toggleClass("menu__logo_active");
         $("body").toggleClass("lock-scroll");
     });
-
     $(".menu__logo").click(function() {
         $(".hamburger").toggleClass("hamburger_active");
         $(".menu").toggleClass("menu_active");
         $(".menu__logo").toggleClass("menu__logo_active");
         $("body").toggleClass("lock-scroll");
     });
-
     $('.subscribe-block').submit(function(e) {
         e.preventDefault();
         $.ajax({
@@ -109,9 +101,7 @@ $(document).ready(function() {
         });
         return false;
     });
-
     $('.tabs').tabslet();
-
     $('.message-form__fields').submit(function(e) {
         e.preventDefault();
         $.ajax({
