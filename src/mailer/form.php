@@ -3,6 +3,8 @@
 $name = $_POST['user_name'];
 $email = $_POST['user_mail'];
 $usermessage = $_POST['user_message'];
+$userconsent = $_POST['user_consent'];
+
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -20,6 +22,7 @@ $mail->isHTML(true);
 $mail->Subject = 'Письмо c Orange Web';
 $mail->Body    = '
 	Пользователь тестового сайта <b>Orange Web</b> оставил данные!<br><br> 
+	Предоставлено ли право на ПД: ' . $userconsent . ' <br>
 	Имя: ' . $name . ' <br>
 	E-mail: ' . $email . '<br>
 	Сообщение: ' . $usermessage . '';

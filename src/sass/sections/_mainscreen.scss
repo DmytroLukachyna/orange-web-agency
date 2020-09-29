@@ -1,9 +1,9 @@
 .mainscreen {
     background: url("../img/mainscreen.jpg") no-repeat 50%/cover;
     &__message-form {
-        margin: 88px 30px 0;
+        margin: 58px 30px 0;
         max-width: 372px;
-        height: 388px;
+        max-height: 418px;
         box-shadow: 0 0 57px rgba(20, 20, 21, 0.2);
         border-radius: 2px;
         background: rgb(255, 255, 255);
@@ -43,7 +43,23 @@
             padding: 0;
             li {
                 list-style-type: none;
+                label {
+                    a {
+                        color: inherit;
+                    }
+                }
             }
+        }
+        .user_consent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #consent,
+        #footer_consent {
+            width: 20px;
+            height: 20px;
+            margin: 10px 10px 10px 0;
         }
     }
 }
