@@ -41,6 +41,7 @@ $(document).ready(function() {
         arrows: false,
         accessibility: false,
         focusOnSelect: false,
+        swipe: false,
         responsive: [{
                 breakpoint: 1200,
                 settings: {
