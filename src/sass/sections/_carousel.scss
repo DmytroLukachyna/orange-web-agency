@@ -99,12 +99,14 @@
                 margin: 0 8px;
                 cursor: pointer;
                 font-size: 0;
-				outline: none;
+                outline: none;
+                transition: all .15s ease-in-out;
             }
         }
         .slick-active {
             button {
                 background: var(--main-color);
+                width: 44px;
             }
         }
     }
