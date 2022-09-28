@@ -1,1 +1,1 @@
-https://dmytrolukachyna.pp.ua/projects/orange/
+https://dmytrolukachyna.pp.ua/projects/pet/orange/
