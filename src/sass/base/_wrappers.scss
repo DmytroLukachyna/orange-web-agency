@@ -1,53 +1,53 @@
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .title-wrapper {
-    display: block;
-    padding-top: 70px;
-    margin: 0 auto;
-    max-width: 703px;
-    min-height: 50px;
-    text-align: center;
+  display: block;
+  padding-top: 70px;
+  margin: 0 auto;
+  max-width: 703px;
+  min-height: 50px;
+  text-align: center;
 }
 
 .process-wrapper {
-    padding: 70px 0 150px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  padding: 70px 0 150px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .photo-wrapper {
-    padding: 70px 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .team-wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 70px 0 120px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 70px 0 120px;
 }
 
 .footer-wrapper {
-    padding: 50px 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  padding: 50px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .social-wrapper {
-    margin: 0 auto 25px;
-    min-width: 300px;
-    max-width: 650px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    color: rgb(251, 251, 251);
-    font-size: 17px;
+  margin: 0 auto 25px;
+  min-width: 300px;
+  max-width: 650px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(251, 251, 251);
+  font-size: 17px;
 }

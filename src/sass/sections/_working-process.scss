@@ -1,49 +1,49 @@
 .working-process {
-    min-height: 622px;
+  min-height: 622px;
 }
 
 .process {
-    position: relative;
-    width: 262px;
-    height: 262px;
-    text-align: center;
-    &_lightblue {
-        background: rgb(78, 178, 247);
+  position: relative;
+  width: 262px;
+  height: 262px;
+  text-align: center;
+  &_lightblue {
+    background: rgb(78, 178, 247);
+  }
+  &_purple {
+    background: rgb(192, 73, 248);
+  }
+  &_blue {
+    background: rgb(129, 126, 255);
+  }
+  &_red {
+    background: rgb(247, 71, 112);
+  }
+  &_item {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+  }
+  &_descr {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    margin: 26px 30px 0;
+  }
+  &_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 40px auto 0;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      color: rgba(255, 255, 255, 1);
     }
-    &_purple {
-        background: rgb(192, 73, 248);
-    }
-    &_blue {
-        background: rgb(129, 126, 255);
-    }
-    &_red {
-        background: rgb(247, 71, 112);
-    }
-    &_item {
-        color: rgba(255, 255, 255, .9);
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 0.2px;
-        margin-top: 20px;
-    }
-    &_descr {
-        color: rgba(255, 255, 255, .75);
-        font-size: 15px;
-        letter-spacing: 0.15px;
-        margin: 26px 30px 0;
-    }
-    &_icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        margin: 40px auto 0;
-        font-size: 50px;
-        color: rgba(255, 255, 255, .8);
-        transition: all 0.25s ease-in-out;
-        &:hover {
-            color: rgba(255, 255, 255, 1);
-        }
-    }
+  }
 }

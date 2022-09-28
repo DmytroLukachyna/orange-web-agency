@@ -1,1 +1,1 @@
-https://dmytrolukachyna.github.io/projects/orange/
+https://dmytrolukachyna.pp.ua/projects/orange/
