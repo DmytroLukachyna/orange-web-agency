@@ -1,3 +1,8 @@
+import $ from './jquery-global.js';
+import 'tabslet';
+import 'slick-carousel';
+import '@fancyapps/fancybox';
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 900) {
@@ -6,7 +11,7 @@ $(document).ready(function () {
       $('.pageup').fadeOut();
     }
   });
-  $('a[href=#top]').click(function () {
+  $('a[href="#top"]').click(function () {
     const _href = $(this).attr('href');
     $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
     return false;
@@ -91,36 +96,22 @@ $(document).ready(function () {
   });
   $('.subscribe-block').submit(function (e) {
     e.preventDefault();
-    $.ajax({
-      type: 'POST',
-      url: 'mailer/subscription.php',
-      data: $(this).serialize(),
-    }).done(function () {
-      $(this).find('input').val('');
-      $('.subscribe-block').trigger('reset');
-      $('.thanks-subscr').fadeIn('slow');
-      setTimeout(function () {
-        $('.thanks-subscr').fadeOut('slow');
-      }, 2500);
-    });
+    $('.subscribe-block').trigger('reset');
+    $('.thanks-subscr').fadeIn('slow');
+    setTimeout(function () {
+      $('.thanks-subscr').fadeOut('slow');
+    }, 2500);
     return false;
   });
   $('.tabs').tabslet();
   $('.message-form__fields').submit(function (e) {
     e.preventDefault();
-    $.ajax({
-      type: 'POST',
-      url: 'mailer/form.php',
-      data: $(this).serialize(),
-    }).done(function () {
-      $(this).find('input').val('');
-      $('.message-form__fields').trigger('reset');
-      $('.thanks-msg').fadeIn('slow');
-      parent.$.fancybox.close();
-      setTimeout(function () {
-        $('.thanks-msg').fadeOut('slow');
-      }, 2500);
-    });
+    $('.message-form__fields').trigger('reset');
+    $('.thanks-msg').fadeIn('slow');
+    $.fancybox.close();
+    setTimeout(function () {
+      $('.thanks-msg').fadeOut('slow');
+    }, 2500);
     return false;
   });
 });
